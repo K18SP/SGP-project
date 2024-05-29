@@ -1,0 +1,71 @@
+
+*{
+    padding: 0;margin: 0;
+}
+.main-container{
+    display: flex;
+    width:98vw;
+    height: 55vh;
+    /* border: 2px solid red; */
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+}
+
+.img-container{
+    margin: 0px 0px 0px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 14px;
+    row-gap: 13px;  
+    justify-content: center;
+    align-content: center;
+}
+
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+.facimg-image1{
+    position: relative;
+    z-index: 3;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    transition: opacity .2s ease;
+    object-fit: fill;
+}
+
+.heading-styles {
+    position: relative;
+    z-index: 1; 
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+    font-size: 48px;
+    letter-spacing: 0.02em;
+    font-family: 'Bebas Neue'; 
+    font-weight: bold;
+    transition: opacity .2s ease;
+    background: transparent;
+}
+
+.text-styles:hover{
+    z-index: 100;  
+    color: rgb(0, 0, 0);  
+    position: relative;
+    opacity: 2;
+}
+.hihello{
+    height: 100%;
+    width: auto;
+}
+
+.hihello:hover{
+    opacity: .21;
+    position: relative;
+    z-index: 0;
+} 
